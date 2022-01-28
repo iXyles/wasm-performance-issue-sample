@@ -9,7 +9,7 @@ This example is based on .NET 6
 https://github.com/iXyles/wasm-performance-issue-sample/blob/1d8255c85ef01235ef8d36f29ebdbe8a2dc28589/shared-code/SharedCode.cs
 
 # Code
-```
+```csharp
 public class SharedCode
 {
     private const int I = 5000; // iterations we perform the look up
