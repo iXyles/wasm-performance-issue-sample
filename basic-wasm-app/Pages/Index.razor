@@ -1,0 +1,17 @@
+﻿@page "/"
+@using shared_code
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+@code {
+    readonly SharedCode _instance = new();
+
+    protected override void OnInitialized()
+    {
+        Console.WriteLine("Starting performance test in wasm app (webassembly).");
+        _instance.PerformanceTest();
+        base.OnInitialized();
+    }
+}
